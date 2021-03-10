@@ -1,0 +1,12 @@
+.home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0,0.4)), url(../../sports-mania-main/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 100%;
+    min-height: 362px;
+    margin-bottom: 5%;
+}
+.league-card{
+    
+}

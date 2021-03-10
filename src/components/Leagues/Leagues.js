@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Leagues.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 
 const Leagues = (props) => {
-
 
     let success;
     const { idLeague, strLeague, strSport } = props.leagueCard;
@@ -17,18 +20,26 @@ const Leagues = (props) => {
             .then(res => res.json())
             .then(res => setBadge(res.leagues[0]))
     }, [idLeague])
-
     if (idLeague === badge.idLeague) {
         success = badge.strBadge
     }
 
     return (
-        <div>
-            <Link to={`/league/${idLeague}`}><h1>{strLeague}</h1></Link>
-            <h2>Sports Type: {strSport}</h2>
-            <h3>{idLeague}</h3>
-            <img src={success} alt="" style={{ width: "20%" }} />
-        </div>
+        <>
+            <div className="col-md-4">
+                <div className="single-item text-center my-4">
+                    <div className="card p-2">
+                        <img className="card-img-top img-fluid" src={success} alt="avatar" />
+                        <div className="card-body">
+                            <h3 className="card-title">{strLeague}</h3>
+                            <h4 className="card-title">Sports Type: {strSport}</h4>
+                            <Link to={`/league/${idLeague}`}><button className="btn btn-sm hire-button">Explore
+                                <FontAwesomeIcon icon={faArrowRight} /> </button></Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 };
 

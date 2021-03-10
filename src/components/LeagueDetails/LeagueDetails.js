@@ -13,7 +13,7 @@ const LeagueDetails = () => {
             .then(res => res.json())
             .then(res => setLeagueDetails(res.leagues[0]))
     }, [idLeague])
-    console.log(leagueDetails)
+
     return (
         <div>
             <h1>{leagueDetails.strGender}</h1>

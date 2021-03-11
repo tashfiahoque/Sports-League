@@ -3,10 +3,9 @@ import Leagues from '../Leagues/Leagues';
 import './Home.css';
 
 const Home = () => {
+
     const [leaguesCard, setLeaguesCard] = useState([])
     useEffect(() => {
-
-
         fetch('https://www.thesportsdb.com/api/v1/json/1/all_leagues.php')
             .then(res => res.json())
             .then(res => setLeaguesCard((res.leagues).slice(0, 299)))
@@ -23,12 +22,11 @@ const Home = () => {
                         {
                             !leaguesCard ? <p>Loading.....</p> : leaguesCard.map(leagueCard => <Leagues
                                 leagueCard={leagueCard}
-                                key={leagueCard.idLeague} />)
+                                key={leagueCard.strLeague} />)
                         }
                     </div>
                 </div>
             </div>
-
         </>
     );
 };

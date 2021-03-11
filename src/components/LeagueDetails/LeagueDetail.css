@@ -17,6 +17,10 @@
 .list-group img{
     max-width: 40%;
 }
+.league-details-info-text h1{
+    font-size: 36px;
+    font-weight: 700;
+}
 .items, .league-details-info-text h1{
     padding-bottom: 30px;
 }
@@ -42,6 +46,7 @@
 }
 a.social{
     margin: 0 1rem;
+    font-size: 4em;
 }
 a.youtube {
     color: #eb3223;
@@ -51,4 +56,74 @@ a.facebook {
 }
 a.twitter {
     color: #49a1eb;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .league-details{
+        min-height: 180px;
+    }
+    .league-details img {
+        max-width: 15%;
+        margin: 20px;
+    }
+    .items, .league-details-info-text h1 {
+        padding-bottom: 16px;
+    }
+    .league-details-info-text h1 {
+        font-size: 17px;
+        font-weight: 600;
+        padding-top: 15px;
+    }
+    .list-group img {
+        max-width: 32%;
+    }
+    .league-details-info-text h4 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: -30px;
+    }
+    .img-fluid {
+        margin: 24px 0px;
+    }
+    .league-details-info-main {
+        margin: 10px;
+    }
+    .league-details-info p {
+        font-size: 15px;
+        line-height: 25px;
+        margin: 10px;
+    }
+    a.social{
+        font-size: 2em;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .league-details img {
+        max-width: 15%;
+    }
+    .items, .league-details-info-text h1 {
+        padding-bottom: 12px;
+    }
+    .league-details-info-text h1 {
+        font-size: 23px;
+        font-weight: 600;
+    }
+    .league-details-info-text h4 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: -21px;
+    }
+    .list-group img {
+        max-width: 32%;
+    }
+    .img-fluid {
+        margin: 24px 0px;
+    }
+    .league-details-info p {
+        font-size: 14px;
+        line-height: 26px;
+    }
 }

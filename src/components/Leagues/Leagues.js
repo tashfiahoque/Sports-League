@@ -29,7 +29,7 @@ const Leagues = (props) => {
             <div className="col-md-4">
                 <div className="single-item text-center my-4">
                     <div className="card">
-                        <img className="card-img-top img-fluid" src={success} alt="avatar" />
+                        <img className="card-img-top img-fluid" src={success} alt="logo" />
                         <div className="card-body">
                             <h3>{strLeague}</h3>
                             <h4>Sports Type: {strSport}</h4>

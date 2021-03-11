@@ -12,7 +12,6 @@ import { faYoutube, faFacebook, faTwitter } from "@fortawesome/free-brands-svg-i
 import './LeagueDetail.css';
 
 
-
 const LeagueDetails = () => {
 
     const { idLeague } = useParams();
@@ -61,9 +60,8 @@ const LeagueDetails = () => {
                         </div>
                         <div className="col-md-6 col-12">
                             {
-                                strGender === 'Male' ? <img src={BoysPoster} alt="" className="img-fluid" />
-                                    : strGender === 'Female' ? <img src={GirlsPoster} alt="" className="img-fluid" />
-                                        : ""
+                                strGender === 'Male' ? <img src={BoysPoster} alt="boys_poster" className="img-fluid" />
+                                    : <img src={GirlsPoster} alt="girls_poster" className="img-fluid" />
                             }
                         </div>
                     </div>
@@ -80,19 +78,19 @@ const LeagueDetails = () => {
                                         : "http://www.facebook.com"}
                                         rel="noreferrer" target="_blank"
                                         className="social facebook">
-                                        <FontAwesomeIcon icon={faFacebook} size="4x" />
+                                        <FontAwesomeIcon icon={faFacebook} />
                                     </a>
                                     <a href={strTwitter ? `http://${strTwitter}`
                                         : "http://www.twitter.com"}
                                         rel="noreferrer" target="_blank"
                                         className="social twitter">
-                                        <FontAwesomeIcon icon={faTwitter} size="4x" />
+                                        <FontAwesomeIcon icon={faTwitter} />
                                     </a>
                                     <a href={strYoutube ? `http://${strYoutube}`
                                         : "http://www.youtube.com"}
                                         rel="noreferrer" target="_blank"
                                         className="social youtube">
-                                        <FontAwesomeIcon icon={faYoutube} size="4x" />
+                                        <FontAwesomeIcon icon={faYoutube} />
                                     </a>
                                 </li>
                             </ul>

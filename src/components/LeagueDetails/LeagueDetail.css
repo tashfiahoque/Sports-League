@@ -49,13 +49,13 @@ a.social{
     font-size: 4em;
 }
 a.youtube {
-    color: #eb3223;
+    color: #eb3223 !important;
 }
 a.facebook {
-    color: #4968ad;
+    color: #4968ad !important;
 }
 a.twitter {
-    color: #49a1eb;
+    color: #49a1eb !important;
 }
 
 

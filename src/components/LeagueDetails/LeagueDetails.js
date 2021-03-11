@@ -9,6 +9,7 @@ import gender from '../../sports-mania-main/Icon/male-gender-sign 1.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVenus } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube, faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import bg from '../../sports-mania-main/bg.png';
 import './LeagueDetail.css';
 
 
@@ -30,7 +31,8 @@ const LeagueDetails = () => {
                 style={
                     strBanner ?
                         { backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${strBanner})` }
-                        : { backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../sports-mania-main/bg.png)' }
+                        :
+                        { backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${bg})` }
                 }>
                 <img src={strBadge} alt="" />
             </div>

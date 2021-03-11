@@ -27,18 +27,20 @@ const Leagues = (props) => {
     return (
         <>
             <div className="col-md-4">
-                <div className="single-item text-center my-4">
+                <Link to={`/league/${idLeague}`}><div className="single-item text-center my-4">
                     <div className="card">
                         <img className="card-img-top img-fluid" src={success} alt="logo" />
                         <div className="card-body">
                             <h3>{strLeague}</h3>
                             <h4>Sports Type: {strSport}</h4>
-                            <Link to={`/league/${idLeague}`}><button className="btn btn-sm explore-button">Explore
-                                <span><FontAwesomeIcon icon={faArrowRight} className="explore-icon" /></span> </button></Link>
+                            <button className="btn btn-sm explore-button">Explore
+                                <span><FontAwesomeIcon icon={faArrowRight} className="explore-icon" /></span> </button>
                         </div>
                     </div>
                 </div>
+                </Link>
             </div>
+
         </>
     );
 };

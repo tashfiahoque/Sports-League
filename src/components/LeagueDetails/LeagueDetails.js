@@ -21,7 +21,7 @@ const LeagueDetails = () => {
             .then(res => res.json())
             .then(res => setLeagueDetails(res.leagues[0]))
     }, [idLeague])
-    console.log(leagueDetails);
+
     let { strBadge, strGender, strDescriptionEN, strLeague, strBanner,
         strCountry, intFormedYear, strSport, strFacebook, strTwitter, strYoutube } = leagueDetails;
     return (

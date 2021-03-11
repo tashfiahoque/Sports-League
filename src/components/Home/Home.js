@@ -9,13 +9,13 @@ const Home = () => {
 
         fetch('https://www.thesportsdb.com/api/v1/json/1/all_leagues.php')
             .then(res => res.json())
-            .then(res => setLeaguesCard((res.leagues).slice(0, 99)))
+            .then(res => setLeaguesCard((res.leagues).slice(0, 299)))
     }, [])
 
     return (
         <>
-            <div className="home  d-flex align-items-center justify-content-center ">
-                <h1>Sports Mania</h1>
+            <div className="home  d-flex align-items-center justify-content-center">
+                <h1>Sports Basket</h1>
             </div>
             <div className="league-card">
                 <div className="container">

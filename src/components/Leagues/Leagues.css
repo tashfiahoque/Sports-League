@@ -17,6 +17,7 @@ div {
     border: none;
     border-radius: 20px;
     background-image: radial-gradient(circle, #d9c6b0, #d1bfaa, #c8b7a3, #c0b09d, #b8a997);
+    padding: 12% 0;
   }
   .card-body {
     padding-bottom: 0;
@@ -27,22 +28,31 @@ div {
   .card img{
       max-width: 50%;
   }
-.card-title{
-    font-size: 12px;
-    font-weight: 600;  
+.card-body h3{
+  line-height: 29px;
+  font-size: 24px;
+  font-weight: bold; 
 }
-.hire-button{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #FFFFFF;
-    padding: 8px 28px;
+.card-body h4{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 5%;
+}
+.card-body span{
+  margin-left: 10px;
+}
+.explore-button{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 50px;
     background: linear-gradient(to left, #8C6849, #d3cbb8);
     border: none;
     outline: none;
     border-radius: 33px;
     transition: 1s ease-in-out;
 }
-.hire-button:hover{
+.explore-button:hover{
     background: linear-gradient(to right, #8C6849, #d3cbb8);
+    color: #fff;
 }

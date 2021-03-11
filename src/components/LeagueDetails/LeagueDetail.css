@@ -1,0 +1,54 @@
+.league-details{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 100%;
+    min-height: 300px;
+}
+.league-details img{
+    max-width: 5%;
+    margin: 20px;
+}
+.league-details-info-main{
+    background: linear-gradient(to left, #8C6849, #d3cbb8);
+    padding: 3%;
+    border-radius: 16px;
+}
+.list-group img{
+    max-width: 40%;
+}
+.items, .league-details-info-text h1{
+    padding-bottom: 30px;
+}
+.league-details-info-text h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: -17px;
+}
+.league-details-info p{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: justify;
+}
+.list-group-item{
+    border: none !important;
+    background-color: none !important;
+}
+.icons{
+    text-align: center;
+    padding-top: 40px;
+}
+a.social{
+    margin: 0 1rem;
+}
+a.youtube {
+    color: #eb3223;
+}
+a.facebook {
+    color: #4968ad;
+}
+a.twitter {
+    color: #49a1eb;
+}

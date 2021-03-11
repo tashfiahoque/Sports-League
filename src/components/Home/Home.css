@@ -4,9 +4,13 @@
     background-repeat: no-repeat;
     background-position: center center;
     max-width: 100%;
-    min-height: 362px;
-    margin-bottom: 5%;
+    min-height: 400px;
 }
-.league-card{
-    
+.league-card, .league-details-info{
+    background-color: #FEEAE6;
+    padding: 5% 0;
+}
+.home h1{
+    font-size: 45px;
+    font-weight: 900;
 }

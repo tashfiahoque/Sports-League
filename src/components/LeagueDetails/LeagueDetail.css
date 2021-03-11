@@ -84,7 +84,7 @@ a.twitter {
         font-weight: 400;
         margin-left: -30px;
     }
-    .img-fluid {
+    .poster-image {
         margin: 24px 0px;
     }
     .league-details-info-main {
@@ -119,11 +119,27 @@ a.twitter {
     .list-group img {
         max-width: 32%;
     }
-    .img-fluid {
+    .poster-image {
         margin: 24px 0px;
     }
     .league-details-info p {
         font-size: 14px;
         line-height: 26px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .league-details img {
+        max-width: 15%;
+    }
+    .league-details-info-text h1 {
+        padding-bottom: 10px; 
+    }
+    .league-details-info-text h1 {
+        font-size: 30px;
+    }
+    .items{
+        padding-bottom: 10px;
     }
 }

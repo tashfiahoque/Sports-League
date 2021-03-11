@@ -60,7 +60,7 @@ const LeagueDetails = () => {
                         </div>
                         <div className="col-md-6 col-12">
                             {
-                                strGender === 'Male' ? <img src={BoysPoster} alt="boys_poster" className="img-fluid" />
+                                strGender === 'Male' ? <img src={BoysPoster} alt="boys_poster" className="img-fluid poster-image" />
                                     : <img src={GirlsPoster} alt="girls_poster" className="img-fluid" />
                             }
                         </div>

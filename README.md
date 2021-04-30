@@ -1,9 +1,11 @@
-This is a react app for all kind of Sports League Information using react-router, bootstrap and font-awesome.
+Sports Basket - Sports League Information Provider.
 
-This app is made for Programming-Hero teaching platform as an assignment.
+Responsive React site where world's all individual league information are available user.
 
-This app is deployed on Netlify.
+Made with react-router, bootstrap.
+
+Deployed on Netlify.
 
 Live site link: https://epic-volhard-738633.netlify.app/
 
-# react-router-tashfiahoque
+
